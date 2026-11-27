@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FridayFinds — Real Black Friday &amp; Cyber Monday Deals 2026</title>
+<meta name="description" content="20 real Black Friday and Cyber Monday deals, found and price-checked on 27 Nov 2026. Search and filter by category, store and discount.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">Black Friday &middot; 27 Nov &mdash; Cyber Monday &middot; 30 Nov 2026</p>
+  <h1>Friday<span>Finds</span></h1>
+  <p class="tagline">Real deals, checked today — not inflated “was” prices. Every deal below was read in a source that names its store, with the price, the usual price and the check time shown.</p>
+  <dl class="stats">
+    <div><dt>Deals checked</dt><dd id="stat-count">20</dd></div>
+    <div><dt>Biggest cut</dt><dd>67% off</dd></div>
+    <div><dt>Stores</dt><dd>5</dd></div>
+    <div><dt>Checked</dt><dd>27 Nov 2026</dd></div>
+  </dl>
+</header>
+
+<section class="controls" aria-label="Find a deal">
+  <label class="search">
+    <span>Search</span>
+    <input id="q" type="search" placeholder="Try “AirPods”, “TV”, “vacuum”…">
+  </label>
+  <label>
+    <span>Category</span>
+    <select id="category">
+      <option value="">All categories</option>
+    </select>
+  </label>
+  <label>
+    <span>Store</span>
+    <select id="store">
+      <option value="">All stores</option>
+    </select>
+  </label>
+  <label>
+    <span>Discount</span>
+    <select id="discount">
+      <option value="0">Any discount</option>
+      <option value="20">20% off or more</option>
+      <option value="30">30% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+  </label>
+  <label>
+    <span>Sort</span>
+    <select id="sort">
+      <option value="discount">Biggest discount</option>
+      <option value="saving">Biggest saving ($)</option>
+      <option value="price-asc">Lowest price</option>
+      <option value="price-desc">Highest price</option>
+    </select>
+  </label>
+</section>
+
+<p class="verdict-key" aria-label="What the verdict means">
+  <strong>How to read the verdict:</strong>
+  <span class="chip new-low">New low</span> lowest price ever reported for that listing &middot;
+  <span class="chip strong">Strong deal</span> a large cut off the usual price &middot;
+  <span class="chip solid">Solid saving</span> a real but modest cut.
+</p>
+
+<main>
+  <p id="result-line" class="result-line" aria-live="polite"></p>
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="empty" hidden>No deals match that search. Try clearing a filter.</p>
+</main>
+
+<footer>
+  <p><strong>How this list was made.</strong> Each deal was found and its price read on 27 Nov 2026 in a deals source that names the store (see “Source” on every card). Prices are in US dollars and can change during the sale — always check the store page before you buy. “Also at” names another store listing the same deal.</p>
+  <p>FridayFinds is an independent deal finder. Store names belong to their owners; this site is not affiliated with any store.</p>
+</footer>
+</body>
+</html>
